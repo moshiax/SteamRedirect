@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "steamredirect",
+  "name": "SteamRedirect",
   "version": "6.6.6",
   "permissions": ["webNavigation", "storage"],
   "background": {
