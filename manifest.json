@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "steamredirect",
+  "version": "6.6.6",
+  "permissions": ["webNavigation", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://store.steampowered.com/app/*"],
+      "js": ["redirect.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "host_permissions": ["*://store.steampowered.com/*"],
+  "icons": {
+    "512": "icon.png"
+  },
+  "action": {
+    "default_popup": "popup.html", 
+    "default_icon": "icon.png"
+  }
+}
